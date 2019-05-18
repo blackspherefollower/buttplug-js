@@ -16,6 +16,7 @@ import { WeVibe } from "../protocols/WeVibe";
 import { VorzeA10Cyclone } from "../protocols/VorzeA10Cyclone";
 import { Maxpro } from "../protocols/Maxpro";
 import { FleshlightLaunch } from "../protocols/FleshlightLaunch";
+import { KiirooGen2Vibe } from "../protocols/KiirooGen2Vibe";
 import { ButtplugDeviceProtocolType } from "../ButtplugDeviceProtocol";
 import { IProtocolConfiguration } from "./IProtocolConfiguration";
 import * as defaultDeviceConfig from "../../../dependencies/buttplug-device-config/buttplug-device-config.json";
@@ -52,6 +53,7 @@ export class DeviceConfigurationManager {
     this._protocols.set("vorzesa", VorzeA10Cyclone);
     this._protocols.set("maxpro", Maxpro);
     this._protocols.set("kiiroo-v2", FleshlightLaunch);
+    this._protocols.set("kiiroo-v2-vibrator", KiirooGen2Vibe);
     this._protocols.set("youou", Youou);
     // Parse our configuration object last, as we need to add device protocols
     // first.
